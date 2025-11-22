@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MC0_fitness tracker</string>
+    <string name="button_for_workout_history">button for workout history</string>
+    <string name="stop_amp_save"><![CDATA[Stop & Save]]></string>
+    <string name="start">Start</string>
+    <string name="_0">0</string>
+    <string name="_0_m">0 m</string>
+</resources>
