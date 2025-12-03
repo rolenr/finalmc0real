@@ -28,6 +28,8 @@ class MyAdapter(private val list: List<WorkoutModel>) : RecyclerView.Adapter<MyA
         val date: TextView = v.findViewById(R.id.tvItemDate)
         val dist: TextView = v.findViewById(R.id.tvItemDistance)
         val steps: TextView = v.findViewById(R.id.tvItemSteps)
+
+        val calories: TextView = v.findViewById(R.id.tvItemCalories)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         return Holder(LayoutInflater.from(parent.context).inflate(R.layout.item_workout_session, parent, false))
@@ -37,6 +39,7 @@ class MyAdapter(private val list: List<WorkoutModel>) : RecyclerView.Adapter<MyA
         holder.date.text = SimpleDateFormat("MMM dd, HH:mm", Locale.getDefault()).format(Date(item.date))
         holder.dist.text = "${item.distance} m"
         holder.steps.text = "${item.steps} steps"
+        holder.calories.text = "${item.calories} kcal"
     }
     override fun getItemCount() = list.size
 }
